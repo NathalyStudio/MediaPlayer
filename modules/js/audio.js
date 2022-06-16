@@ -1,5 +1,3 @@
-function audioPlayer() {
+export default function audioPlayer() {
 
 }
-
-export default audioPlayer
