@@ -1,5 +1,5 @@
-import videoPlayer from "./modules/js/video.js";
-import audioPlayer from "./modules/js/audio.js";
+import videoPlayer from "./modules/js/video.js"
 
-videoPlayer()
-audioPlayer()
+console.log(videoPlayer)
+
+videoPlayer();

@@ -1,8 +1,7 @@
 export default function videoPlayer() {
     // llamamos a los elementos html
-
-    const video = document.getElementById("video")
     const videoContainer = document.getElementById("video-container")
+    const video = document.getElementById("video")
     const play = document.getElementById("play")
     const control = document.getElementById("control")
     const tenSeconds = document.getElementById("tenSeconds")
@@ -21,7 +20,7 @@ export default function videoPlayer() {
     })
 
 
-    // Evento para tomar el porcentage de video que pasó. 
+    // Evento para tomar el porcentaje de video que pasó. 
     video.addEventListener("timeupdate", (e) => {
         const percentage = (e.target.currentTime / duration) * 100 // sacamos la proporcion de tiempo que paso entre la cantidad de tiempo que paso y la duración total del video. Despues lo multiplico por 100 para sacar el porcentage.
 
