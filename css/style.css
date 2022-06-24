@@ -1,35 +1,44 @@
 @import url('./vars.css');
 @import url('./reset.css');
 @import url('./buttons.css');
-
-header{
+header {
     padding: var(--small);
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.flex-even{
+.flex-even {
     justify-content: space-between;
 }
 
-.square-small{
+.square-small {
     width: var(--small);
     height: var(--small);
 }
 
-.square-medium{
+.square-medium {
     width: calc(2*var(--small));
     height: calc(2*var(--small));
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    place-items: center;    
+    place-items: center;
 }
 
-.video-section > video{
+.video-section>video {
     max-width: calc(16*var(--small));
+}
+
+.column {
+    flex-direction: column;
+}
+
+.audio-thumbnail {
+    max-height: 200px;
+    height: 100%;
+    width: 100%;
 }
